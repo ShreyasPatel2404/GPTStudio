@@ -1,0 +1,54 @@
+/* src/index.css */
+@import './styles/theme.css'; /* <-- ADD THIS LINE AT THE TOP */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #eff5fb;
+    --foreground: #0b131e;
+    
+    --card: #ffffff;
+    --card-foreground: #0b131e;
+    
+    --popover: #ffffff;
+    --popover-foreground: #0b131e;
+    
+    --primary: #2d74d7;
+    --primary-foreground: #eff5fb;
+    
+    --secondary: #eff5fb;
+    --secondary-foreground: #2d74d7;
+    
+    --muted: #eff5fb;
+    --muted-foreground: rgba(11, 19, 30, 0.6);
+    
+    --accent: #2d74d7;
+    --accent-foreground: #ffffff;
+    
+    --destructive: #ef4444;
+    --destructive-foreground: #ffffff;
+    
+    --success: #22c55e;
+    --success-foreground: #ffffff;
+    
+    --border: rgba(11, 19, 30, 0.1);
+    --input: rgba(11, 19, 30, 0.1);
+    --ring: #2d74d7;
+    
+    --radius: 1rem;
+  }
+
+  /* You can add a dark theme here if you plan to implement it */
+  /* .dark { ... } */
+
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+}
