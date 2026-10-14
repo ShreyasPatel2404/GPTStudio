@@ -111,7 +111,7 @@ console.log(data);`;
                                 </TabsContent>
                                 <TabsContent value="stream" className="mt-0">
                                     <DocCodeBlock language="bash" className="my-0 rounded-none border-0">
-                                        {`curl http://localhost:3001/api/chat/stream \\
+                                        {`curl https://ragstudio-api.onrender.com \\
   -H "Content-Type: application/json" \\
   -H "Authorization: Bearer YOUR_API_KEY" \\
   -d '{
@@ -126,7 +126,7 @@ console.log(data);`;
                                         {`import requests
 import json
 
-url = "http://localhost:3001/api/v1/chat"
+url = "https://ragstudio-api.onrender.com"
 headers = {
     "Content-Type": "application/json",
     "Authorization": "Bearer YOUR_API_KEY"
