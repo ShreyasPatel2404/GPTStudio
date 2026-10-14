@@ -27,7 +27,7 @@ export function DocumentationView() {
         setTimeout(() => setCopiedId(null), 2000);
     };
 
-    const curlCommand = `curl http://localhost:3001/api/v1/chat \\
+    const curlCommand = `curl https://ragstudio-api.onrender.com \\
   -H "Content-Type: application/json" \\
   -H "Authorization: Bearer YOUR_API_KEY" \\
   -d '{
@@ -35,7 +35,7 @@ export function DocumentationView() {
     "history": []
   }'`;
 
-    const jsExample = `const response = await fetch('http://localhost:3001/api/v1/chat', {
+    const jsExample = `const response = await fetch('https://ragstudio-api.onrender.com', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
